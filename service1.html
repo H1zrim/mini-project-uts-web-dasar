@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Website ku</title>
+   <link rel="stylesheet" href="style.css">
+   
+   <style>
+      body{
+         margin: 0;
+         padding: 0;
+         display: block;
+         min-height: 100vh;
+         align-items: flex-start;
+         justify-content: center;
+      }
+
+      .form-container{
+         width: 100%;
+         max-width: 400px;
+         height: auto;
+         margin-top: 50px;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 50px;
+         padding: 20px;
+         border: 1px solid #000;
+         border-radius: 8px;
+      }
+
+      label{
+         display: block;
+         margin-top: 10px;
+         font-weight: bold;
+      }
+
+      textarea{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    button{
+         background-color: aqua;
+         color: black;
+         padding: 10px 15px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         margin-top: 20px;
+      }
+
+      button:hover{
+         background-color: aquamarine;
+      }
+   </style>
+</head>
+<header>
+   <nav>
+      <input type="checkbox" id="hamburger-menu">
+       <label for="hamburger-menu" class="hamburger">&#9776;</label>
+      <ul>
+         <li><a href="home.html">Home</a></li>
+         <li><a href="product.html">Product</a></li>
+         <li><a href="service.html">Service</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+   </nav>
+</header>
+<body>
+   <div class="form-container">
+    <h1>Layanan Pelanggan (Langkah 2/2)</h1>
+    <div id="infoPelanggan">
+        <p>Memuat data pelanggan....</p>
+    </div>
+
+    <form id="formService1">
+        <label for="keluhan">Deskripsikan Keluhan Anda:</label>
+            <textarea id="keluhan" required></textarea>
+
+            <label for="saran">Berikan Saran (Opsional):</label>
+            <textarea id="saran"></textarea>
+
+            <label for="kritik">Berikan Kritik (Opsional):</label>
+            <textarea id="kritik"></textarea>
+            
+            <button type="submit">Kirim Layanan</button>
+    </form>
+   </div>
+   <script src="service.js"></script>
+</body>
+<footer>
+   <p>&copy;INI PROYEK</p>
+</footer>
+</html>

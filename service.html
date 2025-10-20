@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Website ku</title>
+   <link rel="stylesheet" href="style.css">
+   
+   <style>
+      body{
+         margin: 0;
+         padding: 0;
+         display: block;
+         min-height: 100vh;
+         align-items: flex-start;
+         justify-content: center;
+      }
+
+      .form-container{
+         width: 100%;
+         max-width: 400px;
+         height: auto;
+         margin-top: 50px;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 50px;
+         padding: 20px;
+         border: 1px solid #000;
+         border-radius: 8px;
+      }
+
+      label{
+         display: block;
+         margin-top: 10px;
+         font-weight: bold;
+      }
+
+      input[type="text"], input[type="email"], select{
+         width: 100%;
+         padding: 8px;
+         margin-top: 5px;
+         border: 1px solid #000;
+         border-radius: 4px;
+         box-sizing: border-box;
+      }
+
+      button{
+         background-color: aqua;
+         color: black;
+         padding: 10px 15px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         margin-top: 20px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      button:hover{
+         background-color: rgb(16, 119, 85);
+      }
+   </style>
+</head>
+<header>
+   <nav>
+      <input type="checkbox" id="hamburger-menu">
+       <label for="hamburger-menu" class="hamburger">&#9776;</label>
+      <ul>
+         <li><a href="home.html">Home</a></li>
+         <li><a href="product.html">Product</a></li>
+         <li><a href="service.html">Service</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+   </nav>
+</header>
+<body>
+   <div class="form-container">
+        <h1>Layanan Pelanggan (Langkah 1/2)</h1>
+        <form id="formService">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="layanan">Produk yang Dipakai:</label>
+            <select id="layanan" required>
+               <option value="">Pilih Produk</option>
+               <option value="Produk Utama">Produk Utama</option>
+               <option value="Produk 1">Produk 1</option>
+               <option value="Produk 2">Produk 2</option>
+               <option value="Produk 3">Produk 3</option>
+            </select>
+            
+            <button type="submit">Lanjut ke Deskripsi Keluhan</button>
+        </form>
+    </div>
+   <script src="service.js"></script>
+</body>
+<footer>
+   <p>&copy;INI PROYEK</p>
+</footer>
+</html>
