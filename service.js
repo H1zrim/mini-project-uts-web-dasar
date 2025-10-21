@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('Data Final diterima siap dikirim:', finalData);
                 alert('Terima kasih! Kami terima dan kami proses secepatnya.');
                 //kembali ke home
-                window.location.href='home.html';
+                window.location.href='index.html';
             });
         }else{
             //jika tidak ada data di lokal maka kembali
@@ -62,4 +62,5 @@ document.addEventListener('DOMContentLoaded', () => {
             form1.style.display = 'none';
         }
     }
+
 });
