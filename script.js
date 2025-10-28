@@ -101,8 +101,4 @@ document.addEventListener('DOMContentLoaded',() => {
             }
         });
     }
-
-    //panggil DOMContentLoaded
-    initSlider();
-    MOBILE_QUERY.addEventListener('change', initSlider);
 });
